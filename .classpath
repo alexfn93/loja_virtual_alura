@@ -7,5 +7,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/MySQL Connector"/>
+	<classpathentry kind="lib" path="C:/java-libs/JARs externos/c3p0-0.9.5.4.jar"/>
+	<classpathentry kind="lib" path="C:/java-libs/JARs externos/mchange-commons-java-0.2.16.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
