@@ -37,10 +37,10 @@ public class TesteInsercaoComParametro {
 	private static void adicionarVariavel(String nome, String descricao, PreparedStatement stm) throws SQLException {
 		stm.setString(1, nome);
 		stm.setString(2, descricao);
-		/*
-		 * if(nome.equals("Radio")) { throw new
-		 * RuntimeException("Não foi possível adicionar o produto");
-		 */
+
+		if (nome.equals("Radio")) {
+			throw new RuntimeException("Não foi possível adicionar o produto");
+		}
 
 		stm.execute();
 
