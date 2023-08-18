@@ -1,4 +1,4 @@
-package br.com.alura.jdbc;
+package br.com.alura.jdbc.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,15 +9,15 @@ import java.sql.SQLException;
 import br.com.alura.jdbc.modelo.Produto;
 //import br.com.alura.jdbc.factory.ConnectionFactory;
 
-public class PersistenciaProduto {
+public class ProdutoDAO {
 
 	private Connection connection;
 
-	public PersistenciaProduto(Connection connection) {
+	public ProdutoDAO(Connection connection) {
 		this.connection = connection;
 	}
 
-	public void salvarProduto(Produto produto) throws SQLException{
+	public void salvar(Produto produto) throws SQLException {
 
 		String sql = "INSERT INTO PRODUTO (NOME, DESCRICAO) VALUES (?, ?)";
 
